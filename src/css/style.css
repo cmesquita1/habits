@@ -1,0 +1,22 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+    color: var(--grey-1);
+}
+
+input, textarea, select {
+    font-family: 'Inter', sans-serif;
+    color: var(--grey-2);
+    background-color: var(--grey-5);
+    padding: 0.65rem 1.125rem;
+    border: 2px solid var(--grey-5);
+    border-radius: 4px;
+}
+
+textarea {
+    height: 5rem;
+    resize: none;
+}

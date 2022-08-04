@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d748c133fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/components.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/homepage.css">
+    <link rel="stylesheet" href="/src/css/modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script defer type="module" src="../scripts/homepage.scripts.js"></script>
+    <title>Home</title>
+  </head>
+
+  <body class="showPage">
+    <div class="loadingContainer">
+      <div class="loadingContainer__spinner">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent; display: block;" width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+        <g transform="translate(50 50) scale(0.7000000000000001) translate(-50 -50)"><g>
+          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" calcMode="spline" dur="4s" values="0 50 50;90 50 50;180 50 50;270 50 50;360 50 50" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 1 0 1;0 1 0 1;0 1 0 1;0 1 0 1"></animateTransform>
+          <g>
+            <animateTransform attributeName="transform" type="scale" dur="1s" repeatCount="indefinite" calcMode="spline" values="1;1;0.5" keyTimes="0;0.5;1" keySplines="1 0 0 1;1 0 0 1"></animateTransform>
+            <g transform="translate(25 25)">
+          <rect x="-25" y="-25" width="52" height="52" fill="#0051a2">
+            
+            <animate attributeName="fill" dur="4s" repeatCount="indefinite" calcMode="spline" values="#0051a2;#1b75be;#408ee0;#89bff8;#0051a2" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 1 0 1;0 1 0 1;0 1 0 1;0 1 0 1"></animate>
+          </rect>
+        </g><g transform="translate(25 75)">
+          <rect x="-25" y="-25" width="52" height="50" fill="#0051a2">
+            <animateTransform attributeName="transform" type="scale" dur="1s" repeatCount="indefinite" calcMode="spline" values="0;1;1" keyTimes="0;0.5;1" keySplines="1 0 0 1;1 0 0 1"></animateTransform>
+            <animate attributeName="fill" dur="4s" repeatCount="indefinite" calcMode="spline" values="#0051a2;#1b75be;#408ee0;#89bff8;#0051a2" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 1 0 1;0 1 0 1;0 1 0 1;0 1 0 1"></animate>
+          </rect>
+        </g><g transform="translate(75 25)">
+          <rect x="-25" y="-25" width="50" height="52" fill="#0051a2">
+            <animateTransform attributeName="transform" type="scale" dur="1s" repeatCount="indefinite" calcMode="spline" values="0;1;1" keyTimes="0;0.5;1" keySplines="1 0 0 1;1 0 0 1"></animateTransform>
+            <animate attributeName="fill" dur="4s" repeatCount="indefinite" calcMode="spline" values="#0051a2;#1b75be;#408ee0;#89bff8;#0051a2" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 1 0 1;0 1 0 1;0 1 0 1;0 1 0 1"></animate>
+          </rect>
+        </g><g transform="translate(75 75)">
+          <rect x="-25" y="-25" width="50" height="50" fill="#0051a2">
+            <animateTransform attributeName="transform" type="scale" dur="1s" repeatCount="indefinite" calcMode="spline" values="0;1;1" keyTimes="0;0.5;1" keySplines="1 0 0 1;1 0 0 1"></animateTransform>
+            <animate attributeName="fill" dur="4s" repeatCount="indefinite" calcMode="spline" values="#0051a2;#1b75be;#408ee0;#89bff8;#0051a2" keyTimes="0;0.25;0.5;0.75;1" keySplines="0 1 0 1;0 1 0 1;0 1 0 1;0 1 0 1"></animate>
+          </rect>
+        </g>
+          </g>
+        </g></g>
+        </svg>
+      </div>
+    </div>
+    <header>
+      <div class="containerWrapper">
+        <h1 class="titleHome">KenzieHabit</h1>
+        <nav class="navHeader">
+          <ul>
+            <li class="userHeader">
+              <div class="imgPerfil"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="sectionUserInfo">
+      <div class="containerWrapper">
+        <div class="imgUserInfo"></div>
+        <div class="boxUserInfo">
+          <h2></h2>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <main class="mainHome">
+      <div class="containerWrapper">
+        <div class="controllerHabits">
+          <h2>Tarefas</h2>
+
+          <div class="groupButtons">
+            <button class="allButton">Todos</button>
+            <button class="doneButton">Concluidos</button>
+            <button class="createHabitButton">Criar</button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="listHabits">
+        
+      </ul>
+    </main>
+  </body>
+</html>

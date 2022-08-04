@@ -1,0 +1,149 @@
+.modalWrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 95%;
+    padding: 2rem;
+    animation: showModal 200ms;
+}
+
+@keyframes showModal {
+    from {
+        transform: scale(0.1,0.1);
+    }
+    
+    to {
+        transform: scale(1,1);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .modal {
+        width: 31rem;
+    }
+}
+
+.modal--hide-modal {
+    animation: hideModal 200ms;
+}
+
+@keyframes hideModal {
+    from {
+        transform: scale(1,1);
+    }
+    
+    to {
+        transform: scale(0.1,0.1);
+    }
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.modal__header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.modal__header button {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--grey-3);
+}
+
+.modal__header button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.modal__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form__inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form__statusContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__form label {
+    font-size: 0.875rem;
+}
+
+.modal__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteHabit {
+    background: var(--grey-5);
+    color: black;
+}
+
+.deleteHabit:hover {
+    background: var(--grey-3);
+}
+
+.mainButton--insert, .mainButton--saveChanges {
+    width: 100%;
+}
+
+.title__container>h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 69px 0 15px 0;
+}
+.title__container>h3 {
+    margin-bottom: 64px;
+    color: #343A40;
+}
+
+.cancel__deletion {
+    background: var(--grey-5);
+    color: #000;
+    width: 180px;
+    font-weight: 600;
+}
+
+.cancel__deletion:hover {
+    background: var(--grey-3);
+}
+
+.confirm__deletion {
+    background: var(--error-secondary);
+}
+
+.confirm__deletion:hover {
+    background: var(--error-primary);
+}
